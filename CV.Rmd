@@ -1,14 +1,13 @@
 ---
-name: Adam
-surname: Kirosingh
-position: "PhD Candidate"
-address: "Stanford University, California"
-#profilepic: "./img/me.jpg"
-phone: +1 702 350 0660
-email: "adamsk@stanford.edu"
-github: akirosingh
-linkedin: adamkirosingh
-orcid: 0000-0003-0500-9269
+name: Paul W.
+surname: Hacker
+position: "Postdoctoral Fellow"
+address: "University of British Columbia"
+#profilepic: "./img/pwh.jpg"
+email: "paul.w.hacker@gmail.com"
+github: paulwhacker
+linkedin: paul-w-hacker
+orcid: 0000-0001-9786-3715
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 414141
 docname: CV

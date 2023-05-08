@@ -1,0 +1,318 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Paul W.}{Hacker}
+
+\position{Postdoctoral Fellow}
+\address{University of British Columbia}
+
+\email{\href{mailto:paul.w.hacker@gmail.com}{\nolinkurl{paul.w.hacker@gmail.com}}}
+\orcid{0000-0001-9786-3715}
+\github{paulwhacker}
+\linkedin{paul-w-hacker}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{2em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\honortitlestyle{#1}}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\honordatestyle{#1}}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {May 2023}
+    {Paul W. Hacker~~~·~~~CV}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{PhD Microbiology \& Immunology}{Stanford University}{Stanford, CA}{2022}{\begin{cvitems}
+\item Dissertation - Malaria susceptibility: genetic factors and immune adaptation during pregnancy
+\end{cvitems}}
+    \cventry{BSc Molecular Microbiology \& Immunology with Minors in Mathematics \& Chemistry}{University of Nevada, Reno}{Reno, NV}{2017}{\begin{cvitems}
+\item Honors Thesis - In vivo distribution and clearance of purified capsular polysaccharide from Burkholderia pseudomallei in a Murine Model
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{research}{%
+\section{Research}\label{research}}
+
+\begin{cventries}
+    \cventry{Jagannathan Lab - Department of Medicine }{Graduate Student Researcher}{Stanford University}{October 2020 - Present }{\begin{cvitems}
+\item Investigate cellular correlates for acquired immunity against placental malaria in pregnant mothers from Uganda. \begin{itemize}
+        \item Culture VAR2CSA expressing \emph{Plasmodium falciparum}.
+        \item Fluorescent activated cell-sorting and bulk RNA sequencing.
+        \item Flow cytometry and analysis of large datasets.
+    \end{itemize}
+\end{cvitems}}
+    \cventry{Schneider Lab - Department of Microbiology \& Immunology}{Graduate Student Researcher}{Stanford University}{July 2018 - September 2020}{\begin{cvitems}
+\item Identify new genetic loci associated with resistance to malaria infection in a \emph{Plasmodium chabaudi} diversity outbred model. \begin{itemize}
+        \item Genetic loci mapping with multiparent populations with qtl2 package.
+        \item Handle Mice using \emph{Plasmodium chabaudi} infection model.
+    \end{itemize}
+\end{cvitems}}
+    \cventry{Hurtado Group - Department of Mathematics \& Statistics}{Undergraduate Researcher}{University of Nevada, Reno}{October 2016 - August 2018}{\begin{cvitems}
+\item Generalized the linear chain trick using properties of erlang distributions to translate stochastic integrodifferential equations into simpler ordinary differential equations for modelers.
+\end{cvitems}}
+    \cventry{AuCoin Lab - Department of Microbiology \& Immunology}{Undergraduate Researcher}{University of Nevada, Reno}{February 2014 - May 2017}{\begin{cvitems}
+\item Verified \emph{Burkholderia pseudomallei} capsular polysaccharide as a viable biomarker in a murine model. Cultured Leptospirosis interrogans. Subclass switched antibodies decrease limit of detection of a lateral flow immunoassay. \begin{itemize}
+        \item Culturing Hybridoma cell lines in bioreactors for antibodies.
+        \item Measuring clearance kinetics of capsular polysaccharide.
+        \item Optimized Ig subclass for lateral flow immunoassay using ELISAs.
+    \end{itemize}
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{teaching}{%
+\section{Teaching}\label{teaching}}
+
+\begin{cventries}
+    \cventry{Hume Center for Writing and Speaking}{\href{https://undergrad.stanford.edu/people/adam-kirosingh}{\color{black}{Graduate Writing Tutor}}}{Stanford University}{June 2020 - Present }{\begin{cvitems}
+\item Tutor undergraduates and graduate students virtualy one-on-one at all stages of the writing process ranging from scholarship applications to written class assignments.
+   \begin{itemize}
+     \item \href{https://github.com/akirosingh/CV/blob/de14a69ecccf4760587b2f92245a23c48535b227/docs/winter_2021_feedback.pdf}{\color{black}{Winter 2021 Testimonials}} - I most appreciated his enthusiasm and encouraging attitude, since it made me less nervous about sharing my writing and getting feedback on it!
+     \item \href{https://github.com/akirosingh/CV/blob/43bc8932180c69404f7dfa6d5604b4c1133f24e8/docs/fall_2020_feedback.pdf}{\color{black}{Fall 2020 Testimonials}} - Adam made the session really comfortable and low stress which helped me get through the material and feel comfortable asking questions!
+   \end{itemize}
+\end{cvitems}}
+    \cventry{Microbial Pathogenesis}{Teaching Assistant}{Remote Learning}{April 2020 - June 2020}{\begin{cvitems}
+\item Held weekly office hours, guest lectured, developed and graded research proposals
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{leadership}{%
+\section{Leadership}\label{leadership}}
+
+\begin{cventries}
+    \cventry{Karuna Initiative}{Data Analyst}{Tormabum, Sierra Leone}{June 2019 - September 2019}{\begin{cvitems}
+\item Lead community reports for summer pilot  \begin{itemize}
+        \item Summarize timeseries data of 60 students wellbeing.
+        \item Identify trends in community responses to advise graduate student policy.
+    \end{itemize}
+\end{cvitems}}
+    \cventry{WARC}{Social Entrepeneurship Team Member}{Tormabum, Sierra Leone}{July 2019 - September 2019}{\begin{cvitems}
+\item Establishing a low-cost drying machine in rural Sierra Leone for subsistence farmers. \begin{itemize}
+        \item Prototyping, testing and manufacturing a half-ton scale maize-drying machine.
+        \item Partnering with WARC (West African Rice Company) and FINIC Industries to build and implement maize dryer.
+    \end{itemize}
+\end{cvitems}}
+    \cventry{Noora Health}{\href{https://extreme.stanford.edu/projects/skincubated/}{\color{black}{Design Consultant}}}{Bangalore, India}{February 2019 - June 2019}{\begin{cvitems}
+\item Designed a newborn \href{https://extreme.stanford.edu/projects/skincubated/}{\color{black}{health education kit}} to encourage kangaroo care in mothers of low birthweight babies in India. \begin{itemize}
+        \item Prototyping education material using Adobe Illustrator.
+        \item User-testing with new mothers in hospitals and home visits.
+    \end{itemize}
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{relevant-courses}{%
+\section{Relevant Courses}\label{relevant-courses}}
+
+\begin{cventries}
+    \cventry{Stanford University}{}{}{}{\begin{cvitems}
+\item BIOS 221: Modern Statistics for Modern Biology
+\item CME 193: Introduction to Scientific Python
+\end{cvitems}}
+    \cventry{University of Nevada, Reno}{}{}{}{\begin{cvitems}
+\item MATH 420: Mathmatical Modeling
+\item MATH 461: Probability Theory
+\item MATH 462: Introduction to Stochastic Processes
+\item STAT 467: Statistical Theory
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{technical-skills}{%
+\section{Technical Skills}\label{technical-skills}}
+
+\begin{table}[!h]
+\centering\begingroup\fontsize{9}{11}\selectfont
+
+\begin{tabular}{>{\centering\arraybackslash}p{4.75cm}>{\centering\arraybackslash}p{4.75cm}>{\centering\arraybackslash}p{4.75cm}}
+\toprule
+\textcolor[HTML]{414141}{\textbf{Coding Languages}} & \textcolor[HTML]{414141}{\textbf{Software}} & \textcolor[HTML]{414141}{\textbf{Markup Languages}}\\
+\midrule
+\textcolor[HTML]{7f7f7f}{R, Python, Mathematica, MATLAB} & \textcolor[HTML]{7f7f7f}{GIT, SLURM, High-Performance Computing} & \textcolor[HTML]{7f7f7f}{CSS, HTML, \LaTeX, RMarkdown, Bootstrap}\\
+\bottomrule
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\hypertarget{honors}{%
+\section{Honors}\label{honors}}
+
+\begin{cventries}
+    \cventry{NIH training program for Stanford Bioscience PhD Students}{Cellular Molecular Biology Trainee}{Stanford, CA}{2019}{}\vspace{-4.0mm}
+    \cventry{Granted to Honors students with exceptional theses}{Honors Undergraduate Research Award}{University of Nevada, Reno}{2016}{\begin{cvitems}
+\item Honors Thesis: In vivo distribution of B. pseudomallei capsular polysaccharide
+\end{cvitems}}
+    \cventry{Awarded by SACNAS to less than 5\% of poster presenters at annual conference}{Poster Award for SACNAS Diversity Conference}{Long Beach, CA}{2016}{\begin{cvitems}
+\item Poster: Probability distributions of system average interruption frequency index
+\end{cvitems}}
+    \cventry{Awarded for excellent applications to the goldwater scholarship}{Barry M. Goldwater Scholarship Honorable Mention}{Saint Peter, MN}{2016}{\begin{cvitems}
+\item Proposal on Immunoglobulin G Subclass Switching Impacts Sensitivity of an Immunoassay Targeting Francisella Tularensis Lipopolysaccharide
+\end{cvitems}}
+    \cventry{Given to undergraduate students with promising research proposals}{Nevada Undergraduate Research Award}{University of Nevada, Reno}{2014}{\begin{cvitems}
+\item Awarded 3 consecutive years
+\end{cvitems}}
+    \cventry{Competitive national fellowship for research in Microbiology }{American Society for Microbiology Undergraduate Research Fellow}{Washington, DC}{2016}{\begin{cvitems}
+\item Led to a poster presentation at ASM Microbe 2017
+\end{cvitems}}
+    \cventry{Funding for undergraduate research in biosciences}{Nevada INBRE Undergraduate Research Opportunity Program}{University of Nevada, Reno}{2015}{}\vspace{-4.0mm}
+    \cventry{Scholars program for first-generation college students pursuing higher education}{Ronald E. McNair Post-Baccalaureate Achievement Program Scholar}{University of Nevada, Reno}{2014}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\begin{itemize}
+\item
+  \textbf{Kirosingh, A.S.}, De La Parte, L., Ty, M., Kakuru, A.,
+  Muhindo, M. K., Thulin, N., Kamya, M., Feeney, M., Dorsey, G., Wang,
+  T.T., Jagannathan P., Cellular correlates for protection against
+  malaria acquired across multiple pregnancies (manuscript in
+  preparation)
+\item
+  \textbf{Kirosingh, A.S.}, Gupta, A.S., Chevee, V., Davis, N., Cumnock,
+  K., Lissner, M., Schneider, D.S. Malaria Susceptibility Loci
+  Identified in the Diversity Outbred Mouse Population (manuscript in
+  preparation)
+\item
+  Hurtado, P.J., \textbf{Kirosingh, A.S.}, 2019. Generalizations of the
+  `Linear Chain Trick': incorporating more flexible dwell time
+  distributions into mean field ODE models. J. Math. Biol. 79,
+  1831--1883. \url{https://doi.org/10.1007/s00285-019-01412-w}
+\item
+  Nualnoi, T., \textbf{Kirosingh, A.}, Pandit, S.G., Thorkildson, P.,
+  Brett, P.J., Burtnick, M.N., AuCoin, D.P., 2016. In vivo Distribution
+  and Clearance of Purified Capsular Polysaccharide from Burkholderia
+  pseudomallei in a Murine Model. PLOS Neglected Tropical Diseases 10,
+  e0005217. \url{https://doi.org/10.1371/journal.pntd.0005217}
+\item
+  Nualnoi, T., \textbf{Kirosingh, A.}, Basallo, K., Hau, D.,
+  Gates-Hollingsworth, M.A., Thorkildson, P., Crump, R.B., Reed, D.E.,
+  Pandit, S., AuCoin, D.P., 2018. Immunoglobulin G subclass switching
+  impacts sensitivity of an immunoassay targeting Francisella tularensis
+  lipopolysaccharide. PLOS ONE 13, e0195308.
+  \url{https://doi.org/10.1371/journal.pone.0195308}
+\end{itemize}
+
+\hypertarget{published-abstracts}{%
+\subsection{Published Abstracts}\label{published-abstracts}}
+
+\begin{itemize}
+\item
+  Hurtado, P., \textbf{Kirosingh, A.}, 2018. The Generalized Linear
+  Chain Trick: A new tool to build ODE models with more flexible
+  dwell-time distributions. Presented at the 2018 ESA Annual Meeting
+  (August 5 -- 10), ESA.
+\item
+  \textbf{Kirosingh, A.}, 2017. PROBABILITY DISTRIBUTIONS OF SYSTEM
+  AVERAGE INTERRUPTION FREQUENCY INDEX. Presented at the 2017 AAAS
+  Annual Meeting (February 16-20, 2017), AAAS.
+\end{itemize}
+
+
+
+\end{document}
